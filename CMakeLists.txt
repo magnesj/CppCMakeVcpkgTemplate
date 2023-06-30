@@ -4,7 +4,7 @@ project(cpp_template)
 
 # Find dependencies provided by vcpkg (via vcpkg.cmake)
 find_package(grpc CONFIG REQUIRED)
-find_package(eigen3 CONFIG REQUIRED)
+find_package(Eigen3 REQUIRED)
 
 # main target
 add_executable(main)
