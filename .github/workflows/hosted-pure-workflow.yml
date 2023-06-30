@@ -38,6 +38,8 @@ jobs:
       VCPKG_DEFAULT_BINARY_CACHE: ${{ github.workspace }}/vcpkg/bincache
       # Let's use GitHub Action cache as storage for the vcpkg Binary Caching feature.
       VCPKG_BINARY_SOURCES: 'clear;x-gha,readwrite'
+      # use tripled defined by the workflow matrix
+      VCPKG_DEFAULT_TRIPLET: ${{ matrix.os.triplet }}
 
     steps:
     # Set env vars needed for vcpkg to leverage the GitHub Action cache as a storage
