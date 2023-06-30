@@ -2,9 +2,12 @@
   "name": "main",
   "version-string": "latest",
   "dependencies": [
+    "fmt",
+    "boost-config",
+    "sqlite3",
     "grpc",
     "boost-filesystem",
     "boost-spirit",
-    "eigen3"
+    "eigen3",
   ]
 }
