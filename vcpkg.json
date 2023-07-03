@@ -1,6 +1,9 @@
 {
     "name": "main",
     "dependencies": [
-        "grpc"
-    ]
+      "grpc",
+      "boost-filesystem",
+      "boost-spirit",
+      "eigen3"
+      ]
 }
